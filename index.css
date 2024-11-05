@@ -2,13 +2,14 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: #f8f9fa;
+    
 }
 
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
-    color: #333;
+    color: #d3d3d3;
+    background-color: #070F2B;
 }
 
 
@@ -32,7 +33,7 @@ nav ul li{
 }
 
 nav ul li a{
-    color: #000;
+    color: #d3d3d3;
     font-size: 18px;
     text-decoration: none;
     position: relative;
@@ -42,7 +43,7 @@ nav ul li a{
 .header-text {
     text-align: center;
     padding: 2em;
-    color: #000;
+    color: #d3d3d3;
 }
 
 /*********Sobre mi**********/
@@ -70,15 +71,16 @@ nav ul li a{
 
 .about1 img {
     border-radius: 15%;
-    width: 75%; /* La imagen ocupará el espacio asignado a .about1 */
+    width: 80%; /* La imagen ocupará el espacio asignado a .about1 */
     max-width: 200%; /* Tamaño máximo para mantener una proporción */
+    align-self: center;
     
 }
 .sub-title{
     display: flex;
     align-items: right;
     font-size: px;
-    color: #fff
+    color: #d3d3d3
     
 }
 
@@ -98,7 +100,8 @@ nav ul li a{
     cursor: pointer;
     position: relative;
     font-size: 20px;
-    color: #d3d3d3
+    color: #d3d3d3;
+    font: bolder;
 
 }
 
@@ -114,10 +117,11 @@ nav ul li a{
 }
 
 .tab-links.active-link::after{
-    width: 50%;
+    width: 100%;
     
 
 }
+
 
 .tab-contents {
     display: none;
@@ -132,7 +136,6 @@ nav ul li a{
 
 /*****projects*****/
 #projects {
-    background-color: #f8f9fa;
     padding: 2rem;
 }
 
@@ -143,7 +146,7 @@ nav ul li a{
 
 .sub-title {
     font-size: 2rem;
-    color: #343a40;
+    color: #d3d3d3;
     text-align: center;
     margin-bottom: 2rem;
     font-weight: bold;
@@ -153,13 +156,14 @@ nav ul li a{
     display: flex;
     flex-direction: column;
     gap: 2rem;
+    
 }
 
 .services-list > div {
-    background-color: #ffffff;
+    background-color: #0e1f3f;
     padding: 1.5rem;
     border-radius: 8px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 4px 8px rgba(22, 32, 119, 0.1);
     transition: transform 0.2s ease-in-out;
 }
 
@@ -167,22 +171,23 @@ nav ul li a{
     transform: scale(1.02);
 }
 
+
 h2 {
-    color: #495057;
+    color: #d3d3d3;
     font-size: 1.5rem;
     margin-bottom: 0.5rem;
     font-weight: bold;
 }
 
 h3 {
-    color: #6c757d;
+    color: #d3d3d3;
     font-size: 1.2rem;
     margin-top: 1rem;
     font-weight: 600;
 }
 
 p, li {
-    color: #343a40;
+    color: #d3d3d3;
     font-size: 1rem;
     line-height: 1.6;
 }
@@ -197,13 +202,20 @@ h3::before {
     color: #007bff;
 }
 
-li::before {
-    content: "✔️ ";
-    color: #28a745;
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 10px;
+    background-color: #007bff;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
 }
 
-li:hover {
-    color: #007bff;
+.button:hover {
+    background-color: #0056b3;
 }
 
 
